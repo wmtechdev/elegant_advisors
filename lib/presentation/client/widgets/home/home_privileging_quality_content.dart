@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:elegant_advisors/core/constants/client_constants.dart';
 import 'package:elegant_advisors/core/utils/app_colors/app_colors.dart';
 import 'package:elegant_advisors/core/utils/app_images/app_images.dart';
@@ -7,8 +8,8 @@ import 'package:elegant_advisors/core/utils/app_responsive/app_responsive.dart';
 import 'package:elegant_advisors/core/utils/app_spacing/app_spacing.dart';
 import 'package:elegant_advisors/core/utils/app_styles/app_text_styles.dart';
 import 'package:elegant_advisors/core/utils/app_texts/app_texts.dart';
-import 'package:elegant_advisors/presentation/client/widgets/common/app_button.dart';
-import 'package:elegant_advisors/presentation/client/widgets/common/app_error_image_fallback.dart';
+import 'package:elegant_advisors/core/widgets/app_button.dart';
+import 'package:elegant_advisors/core/widgets/app_error_image_fallback.dart';
 
 class HomePrivilegingQualityContentDesktop extends StatelessWidget {
   const HomePrivilegingQualityContentDesktop({super.key});
@@ -179,7 +180,7 @@ class _ImageCarousel extends StatelessWidget {
           bottom: 0,
           child: Center(
             child: _CarouselArrow(
-              icon: Icons.arrow_back_ios,
+              icon: Iconsax.arrow_left_2,
               onTap: onPrevious,
               size: arrowButtonSize,
               iconSize: arrowSize,
@@ -193,7 +194,7 @@ class _ImageCarousel extends StatelessWidget {
           bottom: 0,
           child: Center(
             child: _CarouselArrow(
-              icon: Icons.arrow_forward_ios,
+              icon: Iconsax.arrow_right_2,
               onTap: onNext,
               size: arrowButtonSize,
               iconSize: arrowSize,
@@ -427,7 +428,7 @@ class _QualityButton extends StatelessWidget {
       backgroundColor: AppColors.primary,
       textColor: AppColors.white,
       width: fullWidth ? double.infinity : null,
-      onPressed: () => Get.toNamed(ClientConstants.routeContact),
+      onPressed: () => Get.toNamed(ClientConstants.routeClientContact),
     );
   }
 }

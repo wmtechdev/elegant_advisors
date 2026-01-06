@@ -14,7 +14,7 @@ class AdminApp extends StatelessWidget {
       title: 'Elegant Advisors - Admin',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      initialRoute: AdminConstants.routeLogin,
+      initialRoute: AdminConstants.routeAdminLogin,
       getPages: AdminRoutes.routes,
     );
   }

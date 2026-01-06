@@ -14,7 +14,7 @@ class ClientApp extends StatelessWidget {
       title: 'Elegant Advisors',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      initialRoute: ClientConstants.routeHome,
+      initialRoute: ClientConstants.routeClientHome,
       getPages: ClientRoutes.routes,
     );
   }

@@ -3,6 +3,8 @@ class AppTexts {
 
   // Web Name
   static const String webName = "Elegant Advisors";
+  static const String logoTitle = "ELEGANT";
+  static const String logoSubtitle = "REAL ESTATE";
 
   // Header Navigation
   static const String navHome = "Home";
@@ -126,6 +128,7 @@ class AppTexts {
   // Footer
   static const String footerTagline =
       "Elegant Advisors - Your Trusted Property & Asset Advisory Partner";
+
   static String footerCopyright() =>
       "© ${DateTime.now().year} Elegant Advisors. All rights reserved.";
 
@@ -133,4 +136,14 @@ class AppTexts {
   static const String contactSuccessMessage =
       "Your message has been sent successfully!";
   static const String contactSuccessTitle = "Success";
+
+  // Admin Login
+  static const String adminLoginTitle = "Admin login";
+  static const String adminLoginEmailHint = "Enter Email Id";
+  static const String adminLoginPasswordHint = "Enter Password";
+  static const String adminLoginButton = "Login";
+  static const String adminLoginEmailError = "Please enter your email";
+  static const String adminLoginEmailInvalidError =
+      "Please enter a valid email";
+  static const String adminLoginPasswordError = "Please enter your password";
 }

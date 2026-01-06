@@ -5,10 +5,10 @@ class ClientConstants {
   static const String appName = 'Elegant Advisors';
 
   // Routes
-  static const String routeHome = '/';
-  static const String routeProperties = '/properties';
-  static const String routePropertyDetail = '/properties/:slug';
-  static const String routeOurTeam = '/our-team';
-  static const String routeAboutUs = '/about-us';
-  static const String routeContact = '/contact';
+  static const String routeClientHome = '/';
+  static const String routeClientProperties = '/properties';
+  static const String routeClientPropertyDetail = '/properties/:slug';
+  static const String routeClientOurTeam = '/our-team';
+  static const String routeClientAboutUs = '/about-us';
+  static const String routeClientContact = '/contact';
 }
