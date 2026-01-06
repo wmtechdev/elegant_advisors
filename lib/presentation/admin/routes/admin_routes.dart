@@ -1,55 +1,55 @@
 import 'package:get/get.dart';
 import 'package:elegant_advisors/core/constants/admin_constants.dart';
-import 'package:elegant_advisors/presentation/admin/screens/login/login_screen.dart';
-import 'package:elegant_advisors/presentation/admin/screens/login/login_binding.dart';
-import 'package:elegant_advisors/presentation/admin/screens/dashboard/dashboard_screen.dart';
-import 'package:elegant_advisors/presentation/admin/screens/dashboard/dashboard_binding.dart';
-import 'package:elegant_advisors/presentation/admin/screens/properties/properties_screen.dart';
-import 'package:elegant_advisors/presentation/admin/bindings/properties/properties_binding.dart';
-import 'package:elegant_advisors/presentation/admin/screens/properties/property_form_screen.dart';
-import 'package:elegant_advisors/presentation/admin/bindings/properties/property_form_binding.dart';
-import 'package:elegant_advisors/presentation/admin/screens/inquiries/inquiries_screen.dart';
-import 'package:elegant_advisors/presentation/admin/bindings/inquiries/inquiries_binding.dart';
-import 'package:elegant_advisors/presentation/admin/middleware/auth_middleware.dart';
+import 'package:elegant_advisors/presentation/admin/screens/login/admin_login_screen.dart';
+import 'package:elegant_advisors/presentation/admin/bindings/login/admin_login_binding.dart';
+import 'package:elegant_advisors/presentation/admin/screens/dashboard/admin_dashboard_screen.dart';
+import 'package:elegant_advisors/presentation/admin/bindings/dashboard/admin_dashboard_binding.dart';
+import 'package:elegant_advisors/presentation/admin/screens/properties/admin_properties_screen.dart';
+import 'package:elegant_advisors/presentation/admin/bindings/properties/admin_properties_binding.dart';
+import 'package:elegant_advisors/presentation/admin/screens/properties/admin_property_form_screen.dart';
+import 'package:elegant_advisors/presentation/admin/bindings/properties/admin_property_form_binding.dart';
+import 'package:elegant_advisors/presentation/admin/screens/inquiries/admin_inquiries_screen.dart';
+import 'package:elegant_advisors/presentation/admin/bindings/inquiries/admin_inquiries_binding.dart';
+import 'package:elegant_advisors/presentation/admin/middleware/admin_auth_middleware.dart';
 
 class AdminRoutes {
   AdminRoutes._();
 
   static final routes = [
     GetPage(
-      name: AdminConstants.routeLogin,
-      page: () => const LoginScreen(),
-      binding: LoginBinding(),
+      name: AdminConstants.routeAdminLogin,
+      page: () => const AdminLoginScreen(),
+      binding: AdminLoginBinding(),
     ),
     GetPage(
-      name: AdminConstants.routeDashboard,
-      page: () => const DashboardScreen(),
-      binding: DashboardBinding(),
-      middlewares: [AuthMiddleware()],
+      name: AdminConstants.routeAdminDashboard,
+      page: () => const AdminDashboardScreen(),
+      binding: AdminDashboardBinding(),
+      middlewares: [AdminAuthMiddleware()],
     ),
     GetPage(
-      name: AdminConstants.routeProperties,
+      name: AdminConstants.routeAdminProperties,
       page: () => const AdminPropertiesScreen(),
       binding: AdminPropertiesBinding(),
-      middlewares: [AuthMiddleware()],
+      middlewares: [AdminAuthMiddleware()],
     ),
     GetPage(
-      name: AdminConstants.routePropertyAdd,
-      page: () => const PropertyFormScreen(),
-      binding: PropertyFormBinding(),
-      middlewares: [AuthMiddleware()],
+      name: AdminConstants.routeAdminPropertyAdd,
+      page: () => const AdminPropertyFormScreen(),
+      binding: AdminPropertyFormBinding(),
+      middlewares: [AdminAuthMiddleware()],
     ),
     GetPage(
-      name: AdminConstants.routePropertyEdit,
-      page: () => const PropertyFormScreen(),
-      binding: PropertyFormBinding(),
-      middlewares: [AuthMiddleware()],
+      name: AdminConstants.routeAdminPropertyEdit,
+      page: () => const AdminPropertyFormScreen(),
+      binding: AdminPropertyFormBinding(),
+      middlewares: [AdminAuthMiddleware()],
     ),
     GetPage(
-      name: AdminConstants.routeInquiries,
+      name: AdminConstants.routeAdminInquiries,
       page: () => const AdminInquiriesScreen(),
       binding: AdminInquiriesBinding(),
-      middlewares: [AuthMiddleware()],
+      middlewares: [AdminAuthMiddleware()],
     ),
   ];
 }

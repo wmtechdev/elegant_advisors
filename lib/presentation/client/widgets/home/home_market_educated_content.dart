@@ -7,8 +7,8 @@ import 'package:elegant_advisors/core/utils/app_responsive/app_responsive.dart';
 import 'package:elegant_advisors/core/utils/app_spacing/app_spacing.dart';
 import 'package:elegant_advisors/core/utils/app_styles/app_text_styles.dart';
 import 'package:elegant_advisors/core/utils/app_texts/app_texts.dart';
-import 'package:elegant_advisors/presentation/client/widgets/common/app_button.dart';
-import 'package:elegant_advisors/presentation/client/widgets/common/app_error_image_fallback.dart';
+import 'package:elegant_advisors/core/widgets/app_button.dart';
+import 'package:elegant_advisors/core/widgets/app_error_image_fallback.dart';
 
 class HomeMarketEducatedContentDesktop extends StatelessWidget {
   const HomeMarketEducatedContentDesktop({super.key});
@@ -29,7 +29,7 @@ class HomeMarketEducatedContentDesktop extends StatelessWidget {
         Expanded(
           flex: 4,
           child: _MarketEducatedContent(
-            onButtonPressed: () => Get.toNamed(ClientConstants.routeProperties),
+            onButtonPressed: () => Get.toNamed(ClientConstants.routeClientProperties),
           ),
         ),
       ],
@@ -51,7 +51,7 @@ class HomeMarketEducatedContentMobile extends StatelessWidget {
         ),
         AppSpacing.vertical(context, 0.04),
         _MarketEducatedContent(
-          onButtonPressed: () => Get.toNamed(ClientConstants.routeProperties),
+          onButtonPressed: () => Get.toNamed(ClientConstants.routeClientProperties),
           fullWidthButton: true,
         ),
       ],

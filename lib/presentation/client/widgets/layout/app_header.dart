@@ -3,10 +3,10 @@ import 'package:elegant_advisors/core/utils/app_colors/app_colors.dart';
 import 'package:elegant_advisors/core/utils/app_images/app_images.dart';
 import 'package:elegant_advisors/core/utils/app_spacing/app_spacing.dart';
 import 'package:elegant_advisors/core/utils/app_texts/app_texts.dart';
-import 'package:elegant_advisors/presentation/client/widgets/app_header/header_language_selector.dart';
-import 'package:elegant_advisors/presentation/client/widgets/app_header/header_logo.dart';
-import 'package:elegant_advisors/presentation/client/widgets/app_header/header_mobile_menu.dart';
-import 'package:elegant_advisors/presentation/client/widgets/app_header/header_nav_item.dart';
+import 'package:elegant_advisors/presentation/client/widgets/header/header_language_selector.dart';
+import 'package:elegant_advisors/presentation/client/widgets/header/header_logo.dart';
+import 'package:elegant_advisors/presentation/client/widgets/header/header_mobile_menu.dart';
+import 'package:elegant_advisors/presentation/client/widgets/header/header_nav_item.dart';
 import 'package:elegant_advisors/core/constants/client_constants.dart';
 
 class AppHeader extends StatefulWidget {
@@ -54,15 +54,15 @@ class _AppHeaderState extends State<AppHeader> {
                         children: [
                           HeaderNavItem(
                             label: AppTexts.navProperties,
-                            route: ClientConstants.routeProperties,
+                            route: ClientConstants.routeClientProperties,
                           ),
                           HeaderNavItem(
                             label: AppTexts.navOurTeam,
-                            route: ClientConstants.routeOurTeam,
+                            route: ClientConstants.routeClientOurTeam,
                           ),
                           HeaderNavItem(
                             label: AppTexts.navAboutUs,
-                            route: ClientConstants.routeAboutUs,
+                            route: ClientConstants.routeClientAboutUs,
                           ),
                           // Contact and Language Selector in same row
                           Row(
@@ -70,7 +70,7 @@ class _AppHeaderState extends State<AppHeader> {
                             children: [
                               HeaderNavItem(
                                 label: AppTexts.navContact,
-                                route: ClientConstants.routeContact,
+                                route: ClientConstants.routeClientContact,
                               ),
                               HeaderLanguageSelector(
                                 selectedLanguage: _selectedLanguage,

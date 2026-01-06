@@ -49,7 +49,7 @@ class AppTextStyles {
       min: 14, // Minimum readable size on mobile
       max: 18, // Maximum size on desktop
     ),
-    fontFamily: AppFonts.secondaryFont,
+    fontFamily: AppFonts.primaryFont,
     color: Colors.white,
   );
 }

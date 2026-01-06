@@ -51,6 +51,9 @@ dependencies:
   # Utilities
   uuid: ^4.5.1
   path_provider: ^2.1.4
+  
+  # Icons
+  iconsax: ^0.0.8
 
 dev_dependencies:
   flutter_test:
@@ -79,6 +82,7 @@ flutter:
     - assets/images/
     - assets/images/logo/
     - assets/images/home/
+    - assets/images/admin/
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
@@ -95,14 +99,21 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
+    - family: Cinzel
+      fonts:
+        - asset: assets/fonts/Cinzel-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Cinzel-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Cinzel-Bold.ttf
+          weight: 700
     - family: Inter
       fonts:
         - asset: assets/fonts/Inter-Regular.ttf
-        - asset: assets/fonts/Inter-SemiBold.ttf
-          weight: 600
-    - family: Poppins
-      fonts:
-        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-Bold.ttf
           weight: 700
   # fonts:
   #   - family: Schyler

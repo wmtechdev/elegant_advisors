@@ -5,6 +5,9 @@ class AppImages {
   static const String appLogo = 'assets/images/logo/app_logo.png';
   static const String appIcon = 'assets/images/logo/app_icon.png';
 
+  //admin login
+  static const String adminLogin = 'assets/images/admin/admin_login.png';
+
   //home page
   static const String homeBackground = 'assets/images/home/home_background.jpg';
   static const String homeMarketEducated =

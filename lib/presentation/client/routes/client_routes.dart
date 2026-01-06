@@ -1,51 +1,51 @@
 import 'package:get/get.dart';
 import 'package:elegant_advisors/core/constants/client_constants.dart';
-import 'package:elegant_advisors/presentation/client/bindings/home/home_binding.dart';
-import 'package:elegant_advisors/presentation/client/screens/home/home_screen.dart';
-import 'package:elegant_advisors/presentation/client/bindings/properties/properties_binding.dart';
-import 'package:elegant_advisors/presentation/client/screens/properties/properties_screen.dart';
-import 'package:elegant_advisors/presentation/client/bindings/properties/property_detail_binding.dart';
-import 'package:elegant_advisors/presentation/client/screens/properties/property_detail_screen.dart';
-import 'package:elegant_advisors/presentation/client/bindings/our_team/our_team_binding.dart';
-import 'package:elegant_advisors/presentation/client/screens/our_team/our_team_screen.dart';
-import 'package:elegant_advisors/presentation/client/bindings/about_us/about_us_binding.dart';
-import 'package:elegant_advisors/presentation/client/screens/about_us/about_us_screen.dart';
-import 'package:elegant_advisors/presentation/client/bindings/contact/contact_binding.dart';
-import 'package:elegant_advisors/presentation/client/screens/contact/contact_screen.dart';
+import 'package:elegant_advisors/presentation/client/bindings/home/client_home_binding.dart';
+import 'package:elegant_advisors/presentation/client/screens/home/client_home_screen.dart';
+import 'package:elegant_advisors/presentation/client/bindings/properties/client_properties_binding.dart';
+import 'package:elegant_advisors/presentation/client/screens/properties/client_properties_screen.dart';
+import 'package:elegant_advisors/presentation/client/bindings/properties/client_property_detail_binding.dart';
+import 'package:elegant_advisors/presentation/client/screens/properties/client_property_detail_screen.dart';
+import 'package:elegant_advisors/presentation/client/bindings/our_team/client_our_team_binding.dart';
+import 'package:elegant_advisors/presentation/client/screens/our_team/client_our_team_screen.dart';
+import 'package:elegant_advisors/presentation/client/bindings/about_us/client_about_us_binding.dart';
+import 'package:elegant_advisors/presentation/client/screens/about_us/client_about_us_screen.dart';
+import 'package:elegant_advisors/presentation/client/bindings/contact/client_contact_binding.dart';
+import 'package:elegant_advisors/presentation/client/screens/contact/client_contact_screen.dart';
 
 class ClientRoutes {
   ClientRoutes._();
 
   static final routes = [
     GetPage(
-      name: ClientConstants.routeHome,
-      page: () => const HomeScreen(),
-      binding: HomeBinding(),
+      name: ClientConstants.routeClientHome,
+      page: () => const ClientHomeScreen(),
+      binding: ClientHomeBinding(),
     ),
     GetPage(
-      name: ClientConstants.routeProperties,
-      page: () => const PropertiesScreen(),
-      binding: PropertiesBinding(),
+      name: ClientConstants.routeClientProperties,
+      page: () => const ClientPropertiesScreen(),
+      binding: ClientPropertiesBinding(),
     ),
     GetPage(
-      name: ClientConstants.routePropertyDetail,
-      page: () => const PropertyDetailScreen(),
-      binding: PropertyDetailBinding(),
+      name: ClientConstants.routeClientPropertyDetail,
+      page: () => const ClientPropertyDetailScreen(),
+      binding: ClientPropertyDetailBinding(),
     ),
     GetPage(
-      name: ClientConstants.routeOurTeam,
-      page: () => const OurTeamScreen(),
-      binding: OurTeamBinding(),
+      name: ClientConstants.routeClientOurTeam,
+      page: () => const ClientOurTeamScreen(),
+      binding: ClientOurTeamBinding(),
     ),
     GetPage(
-      name: ClientConstants.routeAboutUs,
-      page: () => const AboutUsScreen(),
-      binding: AboutUsBinding(),
+      name: ClientConstants.routeClientAboutUs,
+      page: () => const ClientAboutUsScreen(),
+      binding: ClientAboutUsBinding(),
     ),
     GetPage(
-      name: ClientConstants.routeContact,
-      page: () => const ContactScreen(),
-      binding: ContactBinding(),
+      name: ClientConstants.routeClientContact,
+      page: () => const ClientContactScreen(),
+      binding: ClientContactBinding(),
     ),
   ];
 }
