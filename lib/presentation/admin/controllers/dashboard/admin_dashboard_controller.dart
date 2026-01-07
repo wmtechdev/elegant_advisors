@@ -14,11 +14,35 @@ class AdminDashboardController extends BaseController {
   final publishedPropertiesCount = 0.obs;
   final teamCount = 0.obs;
   final newInquiriesCount = 0.obs;
+  final adminName = 'Admin'.obs;
 
   @override
   void onInit() {
     super.onInit();
+    loadAdminName();
     loadDashboardData();
+  }
+
+  Future<void> loadAdminName() async {
+    try {
+      final adminUser = await _authService.getAdminUserData();
+      if (adminUser != null) {
+        adminName.value = adminUser.name.isNotEmpty
+            ? adminUser.name
+            : (adminUser.email.split('@').first);
+      } else {
+        final user = _authService.currentUser;
+        if (user != null) {
+          adminName.value = user.email?.split('@').first ?? 'Admin';
+        }
+      }
+    } catch (e) {
+      // Fallback to email if name loading fails
+      final user = _authService.currentUser;
+      if (user != null) {
+        adminName.value = user.email?.split('@').first ?? 'Admin';
+      }
+    }
   }
 
   Future<void> loadDashboardData() async {

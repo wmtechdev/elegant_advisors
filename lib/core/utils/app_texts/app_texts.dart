@@ -146,4 +146,20 @@ class AppTexts {
   static const String adminLoginEmailInvalidError =
       "Please enter a valid email";
   static const String adminLoginPasswordError = "Please enter your password";
+
+  // Admin Navigation
+  static const String adminNavDashboard = "Dashboard";
+  static const String adminNavProperties = "Properties";
+  static const String adminNavInquiries = "Inquiries";
+  static const String adminNavManageAdmins = "Manage Admins";
+  static const String adminNavLogout = "Log Out";
+
+  // Admin Dashboard
+  static const String adminDashboardTitle = "Dashboard";
+  static const String adminDashboardTodayVisitors = "Today's Visitors";
+  static const String adminDashboardYesterdayVisitors = "Yesterday's Visitors";
+  static const String adminDashboardTotalProperties = "Total Properties";
+  static const String adminDashboardPublishedProperties = "Published Properties";
+  static const String adminDashboardTeamMembers = "Team Members";
+  static const String adminDashboardNewInquiries = "New Inquiries";
 }
